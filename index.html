@@ -1,0 +1,200 @@
+<!doctype html>
+<!-- Based on impress.js Copyright 2011-2012 Bartek Szopka
+
+Released under the MIT and GPL (version 2 or later) Licenses.
+
+Note, this is a total mess of inconsistent css, html, javascript and content. 
+It's probably a good example of how difficult it is for me to separate content with presentation in practice.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title> </title>
+
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700,400italic|Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="lib/fontawesome/css/font-awesome.min.css">
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!-- basic setup -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/base.css" /> -->
+    <!-- menus and buttons -->
+    <link rel="stylesheet" type="text/css" href="css/navmenu.css" />
+
+    <!-- presentation-specific styling, which might be done with less instead of css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- <link rel="stylesheet/less" type="text/css" href="less/style.less"> -->
+
+
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<!--
+    For example this fallback message is only visible when there is `impress-not-supported` class on body.
+-->
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+    
+    <!-- each slide must be a div with class step,  must have some co-ordinates -->
+    <div id="title" class="step" data-x="0" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+        <h1>How I talk...</h1> 
+        <p>Alexander O'Connor<br /><a href="https://www.twitter.com/uberalex"><i class="fa fa-twitter fa-large"></i>@uberalex</a></p>
+        <div class="notes">
+            <!--speaker notes-->
+            <p>You can see speaker notes here</p>
+        </div>
+    </div>
+    <div id="outline" class="step" data-x="1200" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+        <h1>Outline:</h1>
+        <p>
+        <i class="fa fa-pencil-square-o fa-2x"></i><br />
+        Preparation<br />
+        <i class="fa fa-paint-brush fa-2x"></i><br />
+        Tools<br />
+        <i class="fa fa-microphone fa-2x"></i><br />
+        Delivery<br />
+        </p>
+        <div class="notes">
+            <!--speaker notes-->
+            <p>Giving talks is a big part of academia, and in industry, an increasing pressure to have impact of the social, sicentific and commercial types. I've been 'asked' to give talks in a wide variety of contexts, for a wide number of purposes, and I thought I would show you the tools and workflow that I've settled on.</p>
+        </div>
+    </div>
+    <!-- Preparation -->
+        <div id="preparation" class="step" data-x="2400" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+        <img src="img/laptop.jpg" />
+        <div class="notes">
+            <!--speaker notes-->
+            <p>This is what you need to prepare a talk</p>
+        </div>
+    </div>
+        <div id="paper" class="step" data-x="2400" data-y="1200" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+            <ul>
+                <li>decide</li>
+                <li class="cursive">before</li>
+                <li>slide</li>
+            </ul> 
+        <div class="notes">
+            <!--speaker notes-->
+            <p>The discipline of sitting down to write is a challenge, but a good discipline. It's not a waterfall, however. Iterate, but start with a detailed outline.</p>
+        </div>
+    </div>
+
+        <div id="audience" class="step" data-x="2400" data-y="2400" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+            <ul>
+                <li>who</li>
+                <li>what</li>
+                <li>why</li>
+            </ul>
+            <div class="notes">
+                Consider the audience, make sure you're speaking their language (literally and figuratively). Don't patronise, but also don't assume familiarity. Be aware of culture: is this a formal environment?</div>
+        </div>
+        <div id="structure" class="step" data-x="2400" data-y="1200" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+
+        <div class="notes">The slides and the talk should be co-ordinated. They should not be a script, but also not a random picture show. Use them as an aid to drive home detail, to let people whose minds wander catch up, and to scaffold your presentation.</div>
+        </div>
+    <!-- Tools -->
+        <div id="tools" class="step" data-x="3600" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+        <h1>Slide one</h1> 
+        <div class="notes">
+            <!--speaker notes-->
+            <p>Example Speaker Notes.</p>
+        </div>
+    </div>
+
+        <div id="git" class="step" data-x="3600" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+            <a href="http://imgs.xkcd.com/comics/git_commit.png"><img src="http://imgs.xkcd.com/comics/git_commit.png" /></a><br /> <br />
+            <a href="https://help.github.com/articles/creating-project-pages-manually/">Creating GitHub Pages Manually</a>
+            <div class="notes">
+                Git provides distributed version control. It's best for text data, but not binary so you might need a different solution if you intend to use powerpoint.
+            </div>    
+        </div>
+    <!-- Delivery -->
+
+    <div id="delivery" class="step" data-x="4800" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+        <h1>Slide one</h1> 
+        <div class="notes">
+            <!--speaker notes-->
+            <p>Example Speaker Notes.</p>
+        </div>
+    </div>
+
+    <!-- End -->
+<div id="conclusions" class="step" data-x="4800" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+</div>
+<div id="resources" class="step" data-x="0" data-y="6000" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+    <ul>
+        <li><a href="http://www.pexels.com/">http://www.pexels.com/</a></li>
+        <li><a href="http://www.slideshare.net/slidesthatrock/slides-that-rock-9659045">Slies that Rock</a></li>
+        <li><a href="https://github.com/oconnoat/powerpress">https://github.com/oconnoat/powerpress</a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+    </ul>
+</div>
+
+
+    <!-- keep an overview slide, you may wish to change the scaling and / or the co-ordinates -->
+    <div id="overview" class="step" data-x="600" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="2">
+    </div>
+
+</div>
+<!-- end of impress -->
+
+<!-- a bar at the top with a timer. You could put other text or info in here by adding more spans -->
+<div id="navbar"><div id="timebar">&nbsp;</div><p> <span id="timer">Click to Start Timer.</span></p><p><input id="notebox" type="checkbox" /><label for="notebox">show notes</label></p></div>
+
+<!-- a little menu based on the slides -->
+<div class="hint note">
+    <p>Use the spacebar or arrow keys to navigate</p>
+</div>
+
+<!-- clicking on this reveals the quick-navigation bar -->
+<div id="menubutton" tabindex="1">
+    <i class="fa fa-bars fa-lg"></i>
+</div>
+
+<!-- quickly get to different slides here, the list is populated from the IDs of the slides -->
+<div id="navmenu">
+</div>
+
+
+
+<script>
+if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").append('p').text('Tap on the left or right to navigate');
+}
+</script>
+
+<!-- LESS CSS -->
+<script src="lib/less.js/dist/less-1.7.5.js"></script>
+<!-- Load the presentation tool -->
+<script src="lib/impress.js/js/impress.js"></script>
+<!-- Load D3 -->
+<script src="lib/d3/d3.min.js"></script>
+<!-- Load the timer -->
+<script src="js/timer.js"></script>
+<!-- Menu -->
+<script src="js/navmenu.js"></script>
+<!-- -->
+<script src="js/diagram.js"></script>
+
+<!-- Initialisation -->
+<script>impress().init();</script>
+<script>var time = 1000 * 60 * 15;
+        var clock = timer(time, update);
+</script>
+</body>
+</html>

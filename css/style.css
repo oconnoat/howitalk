@@ -1,0 +1,144 @@
+/* Custom CSS File for the impress presentation */
+/* To add Google Fonts, one option is to use @import(url('')); if you do, it must go before all other declarations except @charset
+ * another option is to create a font source block. This will allow you to have a local fallback. It also allows Truetype fallbacks an so on.
+ *
+ *
+ *
+ * An example block below 
+ * @font-face {
+ * font-family: 'Satisfy';
+ *  font-style: normal;
+ *  font-weight: 400;
+ *  src: local('Satisfy') url(http://themes.googleusercontent.com/static/fonts/satisfy/v4/tmRzDlQs5wZmOn9mIuLa-QLUuEpTyoUstqEm5AMlJo4.woff) format('woff'),
+ *  local('Satisfy') url('Satisfy.woff') format('woff'); 
+ * }
+ *
+ *
+ * */
+
+/* hint and unsupported content */
+div.fallback-message {
+    display: none;
+}
+
+
+div.hint {
+    display: none;
+}
+/* Tag Markup */
+div.step{
+    min-width: 900px;
+    min-height: 700px;
+    font-size: 48px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+a:hover{
+    -webkit-text-stroke: 10px solid pink;
+}
+a {
+    text-decoration: none;
+}
+
+/* Impress-related markup */
+.impress-enabled .step.active {
+    background-color: #fff;:
+}
+
+/* make the non-active steps transparent */
+.step:not(.active) { opacity: 0.33; }
+
+/* Per-slide Markup uses .impress-on-slideID */
+
+.impress-not-supported div.fallback-message{
+    display: block;
+    height: 100px;
+    width: 250px;
+    margin-left: -125px;
+    margin-top: -50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+}
+.impress-on-title div.hint{
+   display: block;
+   font-size: 14px;
+   font-style: italic;
+   text-align: center;
+   width: 250px;
+   position: absolute;
+   left: 50%;
+   margin-left: -125px;
+}
+
+.impress-on-paper {
+    background-image: url("../img/check.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-height: 100%;
+    background-width: 100%;
+}
+
+
+.impress-on-overview div:hover{
+    opacity: 1;
+    background-color: #fff;
+}
+
+/* specific divs */
+div#title h1{
+    text-align: center;
+    margin: 10px;
+    font-size: 120px;
+    font-family: 'Dancing Script', cursive;
+}
+div#outline p{
+    line-height: 125%;
+    text-align: center;
+    position: absolute;
+    right: 40%;
+    bottom: 20%;
+}
+
+div#paper{
+    font-weight: bold;
+    -webkit-text-stroke: 2px white;
+    background: rgba(0,0,0,0.75);
+    color: DarkGoldenRod;
+}
+div#git {
+    text-align: center;
+}
+div#git img{
+    width: 80%;
+}
+div#paper ul{
+    width: 66%;
+    height: 80%;
+    margin: auto;
+    list-style: none;
+    font-size: 400%;
+    font-variant: small-caps;
+    text-align: center;
+
+}
+div#paper .cursive{
+    font-family: 'Dancing Script', cursive;
+
+}
+
+div#overview {
+    display: none;
+}
