@@ -138,6 +138,30 @@ div#paper .cursive{
     font-family: 'Dancing Script', cursive;
 
 }
+div#audience div.rotated {
+    font-size: 400%;
+    margin: 0;
+    padding: 0;
+    transform-origin: left;
+    position: absolute;
+    font-weight: bold;
+    font-variant: small-caps;
+    top: 35%;
+    left: 30%;
+}
+div#audience #why:hover{
+    transition: 1s ease-in;
+    color: red;
+    transform: rotate(315deg);
+
+}
+div#audience #why:hover + #who{
+    color: blue;
+    transform: rotate(45deg);
+}
+
+div#audience #what{
+}
 
 div#overview {
     display: none;
