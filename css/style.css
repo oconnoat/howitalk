@@ -101,6 +101,15 @@ a {
 }
 
 
+.impress-on-structure {
+    background-image: url("../img/pattern.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-height: 100%;
+    background-width: 100%;
+}
+
 
 .impress-on-overview div:hover{
     opacity: 1;
@@ -114,6 +123,12 @@ div#title h1{
     font-size: 120px;
     font-family: 'Dancing Script', cursive;
 }
+
+div#title p{
+    text-align: center;
+}
+
+
 div#outline p{
     line-height: 125%;
     text-align: center;
@@ -167,7 +182,6 @@ div#audience #rotatedcontainer{
     height: 100%;
 }
 div#audience #rotatedcontainer:hover #who{
-    transition: all 1s ease;
     color: red;
     transform: translateY(-100%);
 
@@ -179,7 +193,23 @@ div#audience #rotatedcontainer:hover #why{
 
 div#audience #what{
 }
-
+div#structure ol{
+    position: absolute;
+    top: 100px;
+    list-style-position: inside;
+    font-size: 200%;
+    list-style-type: upper-roman;
+    margin: auto;
+}
+div#structure li{
+     margin-left: 200px;
+     font-family: 'Dancing Script', cursive;
+     margin-bottom: 1%;
+}
+div#structure li p.explain{
+    font-size: 50%;
+    font-family: 'Josefin Sans', sans-serif;
+}
 div#tools {
     padding: 20px;
     background-color: rgba(255,255,255,0.66);
@@ -198,9 +228,23 @@ div#tools li.link{
     font-size: 50%;
     margin-left: 8%;
 }
+div#conclusions {
+    padding: 100px;
+    text-align: center;
+}
+div#conclusions p{
+    margin-top: 25%;
+}
+div#conclusions p.textual{
+    font-size: 60%;
+}
 
+div#resources{
+
+}
 div#resources ul{
-    margin-top: 5%;
+    font-size: 66%;
+    margin-top: 66%;
     list-style: square;
     top: 10%;
     left: 10%;
